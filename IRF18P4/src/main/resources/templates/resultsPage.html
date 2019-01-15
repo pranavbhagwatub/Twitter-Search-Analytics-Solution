@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <!-- META SECTION -->
+        <title>shodh. - Results</title>            
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <!-- END META SECTION -->
+        
+        <!-- CSS INCLUDE -->        
+        <link rel="stylesheet" type="text/css" id="theme" href="theme/css/theme-default.css"/>
+		<link rel="stylesheet" type="text/css" id="theme" href="theme/css/pagination-css.css"/>
+        <!-- EOF CSS INCLUDE -->         
+
+	<style>
+	
+	.data-container{
+	
+	}
+	
+	.data-container {
+	width: 100%;
+	margin: 10px 0px;
+	}
+	.data-container > li > a,
+	.data-container > li > span {
+	  margin-left: 3px;
+	  -moz-border-radius: 3px;
+	  -webkit-border-radius: 3px;
+	  border-radius: 3px;
+	  color: #656d78;
+	  border-color: #E5E5E5;
+	}
+	.data-container > li > a:hover,
+	.data-container > li > span:hover {
+	  color: #222;
+	}
+	.data-container > li.active > a,
+	.data-container > li.active > a:hover {
+	  background: #33414e;
+	  color: #FFF;
+	  border-color: #33414e;
+	}
+	.pagination.pagination-sm {
+	  margin: 0px;
+	  width: auto;
+	}
+	.pagination.pagination-sm.push-down-20 {
+	  margin-bottom: 20px;
+	}
+	.pagination.pagination-sm.push-up-20 {
+	  margin-top: 20px;
+	}
+	
+	.table > thead > tr > th,
+	.table > tbody > tr > th,
+	.table > tfoot > tr > th,
+	.table > thead > tr > td,
+	.table > tbody > tr > td,
+	.table > tfoot > tr > td {
+	  border-color: #0000001c;
+	  padding: 16px 20px;
+	  background: #FFFFFF;
+	  color: #656C78;
+	  font-size: 13px;
+}
+	
+	</style>
+		
+    </head>
+	
+    <body>
+         <!-- START PAGE CONTAINER -->
+        <div class="">
+            
+
+            
+            <!-- PAGE CONTENT -->
+            <div class="page-content" style="">
+                
+                <!-- START X-NAVIGATION VERTICAL -->
+                <ul class="x-navigation x-navigation-horizontal ">
+                    <!-- TOGGLE NAVIGATION -->
+                    <li class="xn-icon-button">
+                        <a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a>
+                    </li>
+                    <!-- END TOGGLE NAVIGATION -->
+                    <!-- SEARCH -->
+                    <li class="xn-search">
+                        <form role="form">
+                            <input type="text" default=query name="search" id="searchBar"/> 
+                        </form>
+                    </li>   
+                    <!-- END SEARCH -->                    
+
+
+
+				<li>
+                        <a href="/IRF18P4/resultsPageAnalysis"><span class="fa fa-bar-chart-o"></span> <span class="xn-text">Analysis</span></a>
+                        
+                    </li>
+                </ul>
+                <!-- END X-NAVIGATION VERTICAL -->                     
+
+                 
+                
+                <!-- PAGE CONTENT WRAPPER -->
+                <div class="page-content-wrap" style="padding-top:5%">
+                    
+		
+					
+                    
+                    <div class="row">
+						<div class="col-md-2">
+                            <div class="panel panel-default">
+							<div class="panel-heading">
+                                    <div class="panel-title-box">
+                                        <h3>Filters</h3>
+                                    </div>                                     
+                                    <ul class="panel-controls panel-controls-title">                                        
+										<li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+                                    </ul>                                    
+                                    
+                                </div>
+                                <div class="panel-body">
+                                    
+                                    <div class="form-group">
+									<h3>Language<h3>
+									<div id=langiageFilterList>
+									
+										<div class="col-md-12"> 
+										<input type="checkbox" id="checkBoxEn" onclick="languageFilter(this);" name="English" value="en"> English
+										</div>
+										<div class="col-md-12"> 
+										<input type="checkbox" id="checkBoxFr" onclick="languageFilter(this);" name="French" value="fr"> French
+										</div>
+										<div class="col-md-12"> 
+										<input type="checkbox" id="checkBoxHi" onclick="languageFilter(this);" name="Hindi" value="hi"> Hindi
+										</div>
+										<div class="col-md-12"> 
+										<input type="checkbox" id="checkBoxEs" onclick="languageFilter(this);" name="Spanish" value="es"> Spanish
+										</div>
+										<div class="col-md-12"> 
+										<input type="checkbox" id="checkBoxTh" onclick="languageFilter(this);" name="Thai" value="th"> Thai
+										</div>
+									</div>
+										<!--
+                                        <div class="col-md-12">                                    
+                                            <label class="check"><div class="icheckbox_minimal-grey" style="position: relative;"><input type="checkbox" id="filterCheck" onclick="languageFilter()" class="icheckbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> English</label>
+                                        </div>
+                                        <div class="col-md-12">                                    
+                                            <label class="check"><div class="icheckbox_minimal-grey " style="position: relative;"><input type="checkbox" class="icheckbox" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Hindi</label>
+                                        </div>
+                                        <div class="col-md-12">                                    
+                                            <label class="check"><div class="icheckbox_minimal-grey " style="position: relative;"><input type="checkbox" class="icheckbox" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Russian</label>
+                                        </div>
+										<div class="col-md-12">                                    
+                                            <label class="check"><div class="icheckbox_minimal-grey " style="position: relative;"><input type="checkbox" class="icheckbox" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Spanish</label>
+                                        </div>
+                                        <div class="col-md-12">                                    
+                                            <label class="check"><div class="icheckbox_minimal-grey " style="position: relative;"><input type="checkbox" class="icheckbox" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Thai</label>
+                                        </div>
+										-->
+										<hr>
+                                    </div>
+									
+									<!-- 
+                                    <div class="form-group">
+									<hr>
+									<h3>Lorem Ipsum</h3>
+                                        <div class="col-md-12">                                    
+                                            <label class="check"><div class="iradio_minimal-grey" style="position: relative;"><input type="radio" class="iradio" name="iradio" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Checked</label>
+                                        </div>
+                                        <div class="col-md-12">                                    
+                                            <label class="check"><div class="iradio_minimal-grey " style="position: relative;"><input type="radio" class="iradio" name="iradio" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Checked</label>
+                                        </div>
+                                        <div class="col-md-12">                                    
+                                            <label class="check"><div class="iradio_minimal-grey " style="position: relative;"><input type="radio" class="iradio" name="iradio" disabled="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Checked</label>
+                                        </div>
+										<div class="col-md-12">                                    
+                                            <label class="check"><div class="iradio_minimal-grey " style="position: relative;"><input type="radio" class="iradio" name="iradio" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Checked</label>
+                                        </div>
+                                        <div class="col-md-12">                                    
+                                            <label class="check"><div class="iradio_minimal-grey " style="position: relative;"><input type="radio" class="iradio" name="iradio" disabled="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Checked</label>
+                                        </div>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                            <!-- START WIDGET CLOCK -->
+                            <div class="panel panel-default">
+							<div class="panel-heading">
+                                    <div class="panel-title-box">
+                                        <h3>Trending Hashtags</h3>
+                                    </div>                                     
+                                    <ul class="panel-controls panel-controls-title">                                        
+										<li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+                                    </ul>                                    
+                                    
+                                </div>
+                                <div class="panel-body" style="padding:0px">
+                                    
+                                    <div class="form-group">
+
+									<div class="list-group border-bottom"  id="trendingHashtags">
+									</div>
+										<!--
+                                        <div class="col-md-12">                                    
+                                            <label class="check"><div class="icheckbox_minimal-grey" style="position: relative;"><input type="checkbox" id="filterCheck" onclick="languageFilter()" class="icheckbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> English</label>
+                                        </div>
+                                        <div class="col-md-12">                                    
+                                            <label class="check"><div class="icheckbox_minimal-grey " style="position: relative;"><input type="checkbox" class="icheckbox" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Hindi</label>
+                                        </div>
+                                        <div class="col-md-12">                                    
+                                            <label class="check"><div class="icheckbox_minimal-grey " style="position: relative;"><input type="checkbox" class="icheckbox" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Russian</label>
+                                        </div>
+										<div class="col-md-12">                                    
+                                            <label class="check"><div class="icheckbox_minimal-grey " style="position: relative;"><input type="checkbox" class="icheckbox" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Spanish</label>
+                                        </div>
+                                        <div class="col-md-12">                                    
+                                            <label class="check"><div class="icheckbox_minimal-grey " style="position: relative;"><input type="checkbox" class="icheckbox" checked="checked" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Thai</label>
+                                        </div>
+										-->
+										
+                                    </div>
+									
+                                </div>
+                            </div>  
+                            <div class="widget widget-default widget-padding-sm">
+                                <div class="widget-big-int plugin-clock">14<span>:</span>19</div>                            
+                                <div class="widget-subtitle plugin-date">Friday, November 30, 2018</div>
+                                <div class="widget-controls">                                
+                                    <a href="#" class="widget-control-right"><span class="fa fa-times"></span></a>
+                                </div>                                                      
+                            </div>                      
+                            <!-- END WIDGET CLOCK -->
+                        </div>    
+                        <div class="col-md-6">
+										
+                                        <div class="x-block">
+
+                                            <div class="x-block-content ">                                                                                                
+                                                <table class="table x-table ">
+														<thead>
+															<tr>
+																<th style="width:10%"></th>
+																<th style="width:90%"></th>
+															</tr>
+														</thead>
+                                                    <tbody id="tweetDetails">
+                                                </tbody></table>                                                
+                                            </div>
+                                        </div>
+										<div id="tweetDetailsPagination">
+                                        </div>
+                        </div>
+                        <div class="col-md-4">
+                            <!-- START SALES BLOCK -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title-box">
+                                        <h3>Tweets Distribution by City</h3>
+                                    </div>                                     
+                                    <ul class="panel-controls panel-controls-title">                                        	                                
+                                        <li><a href="#" class="panel-fullscreen rounded"><span class="fa fa-expand"></span></a></li>
+										<li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+                                    </ul>                                    
+                                    
+                                </div>
+                                <div class="panel-body">                                    
+                                    <div class="row stacked">
+                                        <div class="col-md-12">
+                                            <div id="dashboard-map-sales" style="width: 100%; height: 200px"></div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div id="morris-bar-cities" style="width: 100%; height: 200px"></div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <!-- END SALES BLOCK -->
+                            <!-- START VISITORS BLOCK -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title-box">
+                                        <h3>Sentiment Analysis</h3>
+                                        <span>Query:  </span>
+                                    </div>
+                                    <ul class="panel-controls" style="margin-top: 2px;">
+                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>                                        
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
+                                                <li><a href="#" class="panel-remove"><span class="fa fa-times"></span> Remove</a></li>
+                                            </ul>                                        
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                                <div class="panel-body padding-0">
+                                    <div class="chart-holder" id="dashboard-donut-SA" style="height: 200px;"></div>
+                                </div>
+                            </div>
+                            
+                             <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title-box">
+                                        <h3>Topic Analysis</h3>
+                                        <span>Query:  </span>
+                                    </div>
+                                    <ul class="panel-controls" style="margin-top: 2px;">
+                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>                                        
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
+                                                <li><a href="#" class="panel-remove"><span class="fa fa-times"></span> Remove</a></li>
+                                            </ul>                                        
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                                <div class="panel-body padding-0">
+                                    <div class="chart-holder" id="morris-bar-topic" style="height: 200px;"></div>
+                                </div>
+                            </div>
+                            
+                            
+                            <!-- Pranav Test City-->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title-box">
+                                        <h3>City-wise Analysis</h3>
+                                        <span>Query:  </span>
+                                    </div>
+                                    <ul class="panel-controls" style="margin-top: 2px;">
+                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>                                        
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
+                                                <li><a href="#" class="panel-remove"><span class="fa fa-times"></span> Remove</a></li>
+                                            </ul>                                        
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                                <div class="panel-body padding-0">
+                                    <div class="chart-holder" id="dashboard-donut-city" style="height: 200px;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title-box">
+                                        <h3>City wise Crime rate</h3>
+                                        <span>Query:  </span>
+                                    </div>
+                                    <ul class="panel-controls" style="margin-top: 2px;">
+                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>                                        
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
+                                                <li><a href="#" class="panel-remove"><span class="fa fa-times"></span> Remove</a></li>
+                                            </ul>                                        
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                                <div class="panel-body padding-0">
+                                    <div class="chart-holder" id="morris-bar-citywise-crime" style="height: 200px;"></div>
+                                </div>
+                            </div>
+                            <!-- Pranav City End -->
+                            <!-- END VISITORS BLOCK -->
+                            
+                        </div>
+                    </div>
+
+                    
+                    <!-- START DASHBOARD CHART -->
+               
+                    <!-- END DASHBOARD CHART -->
+                    
+                </div>
+                <!-- END PAGE CONTENT WRAPPER -->                                
+            </div>            
+            <!-- END PAGE CONTENT -->
+        </div>
+        <!-- END PAGE CONTAINER -->
+
+        <!-- MESSAGE BOX-->
+        <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+            <div class="mb-container">
+                <div class="mb-middle">
+                    <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+                    <div class="mb-content">
+                        <p>Are you sure you want to log out?</p>                    
+                        <p>Press No if youwant to continue work. Press Yes to logout current user.</p>
+                    </div>
+                    <div class="mb-footer">
+                        <div class="pull-right">
+                            <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
+                            <button class="btn btn-default btn-lg mb-control-close">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MESSAGE BOX-->
+
+        <!-- START PRELOADS -->
+        <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+        <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+        <!-- END PRELOADS -->                  
+        
+    <!-- START SCRIPTS -->
+        <!-- START PLUGINS -->
+        <script type="text/javascript" src="theme/js/plugins/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="theme/js/plugins/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="theme/js/plugins/bootstrap/bootstrap.min.js"></script>        
+        <!-- END PLUGINS -->
+
+        <!-- START THIS PAGE PLUGINS-->        
+        <script type='text/javascript' src='theme/js/plugins/icheck/icheck.min.js'></script>        
+        <script type="text/javascript" src="theme/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+        <script type="text/javascript" src="theme/js/plugins/scrolltotop/scrolltopcontrol.js"></script>
+        
+        <script type="text/javascript" src="theme/js/plugins/morris/raphael-min.js"></script>
+        <script type="text/javascript" src="theme/js/plugins/morris/morris.min.js"></script>       
+        <script type="text/javascript" src="theme/js/plugins/rickshaw/d3.v3.js"></script>
+        <script type="text/javascript" src="theme/js/plugins/rickshaw/rickshaw.min.js"></script>
+        <script type='text/javascript' src='theme/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js'></script>
+        <script type='text/javascript' src='theme/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js'></script>                
+        <script type='text/javascript' src='theme/js/plugins/bootstrap/bootstrap-datepicker.js'></script>                
+        <script type="text/javascript" src="theme/js/plugins/owl/owl.carousel.min.js"></script>                 
+        
+        <script type="text/javascript" src="theme/js/plugins/moment.min.js"></script>
+        <script type="text/javascript" src="theme/js/plugins/daterangepicker/daterangepicker.js"></script>
+        <!-- END THIS PAGE PLUGINS-->        
+
+        <!-- START TEMPLATE -->
+
+        
+        <script type="text/javascript" src="theme/js/plugins.js"></script>        
+        <script type="text/javascript" src="theme/js/actions.js"></script>
+        
+		<script type="text/javascript" src="theme/js/taffy-min.js"></script>
+		
+		<script type="text/javascript" src="theme/js/pagination.js"></script>
+		<script type="text/javascript">
+		var tweetData = ([(${result})]);
+		var facetList=([(${hash})]);
+		//var query = ([(${query})]);
+		var sentimentAnalysisData=([(${sentiAnal})]);
+		var cityCrimeData=([(${crimeCity})]);
+		var facetedData = [];
+		var filteredData =[];
+$(document).ready(function () {
+
+
+	//document.getElementById("searchBar").defaultValue = query;
+
+
+
+//var sentimentAnalysisData = [{"positiveSentiment": 55,"negativeSentiment": 40,"neutralSentiment": 5, }];
+var onerrorlink="https://wersm.com/wp-content/uploads/2017/04/wersm-twitter-egg-broken.png";
+/* Query result with pagination */
+$('#tweetDetailsPagination').pagination({
+    dataSource: tweetData,
+    pageSize: 10,
+    callback: function(data, pagination) {
+        // template method of yourself
+        //var html = simpleTemplating(data);
+        //$('#tweetDetails').html(html);
+	$("#tweetDetails").html('');
+	for (var i = 0; i < data.length; i++) 
+	{
+    $("#tweetDetails").append('<tr><td><a href="#" class="x-user"><img src="'+data[i]["user.profile_image_url_https"]+'" alt="profile picture" style="border-radius: 50%;"></a></td>' +
+    		'<td><span><b>' + data[i]["user.name"] + '</b> <a href="https://twitter.com/'+data[i]["user.screen_name"]+'">@'+data[i]["user.screen_name"] +'</a><br><a href="https://twitter.com/'+data[i]["user.screen_name"]+'/status/'+data[i].id_str+'" style="text-decoration:none;color:black">' +
+    data[i].text + '</a><div class="form-group">' +
+	'<span style="padding:2%;color:#95B75D;"><i class="fa fa-retweet"> ' +
+	data[i].retweet_count+ '</i></span>'+
+	'<span style="padding:2%;color:#B64645"><i class="fa fa-heart"> ' +
+	data[i].favorite_count+ '</i></span>'+
+	'</div></td></tr>');
+	}
+	
+	}
+})
+
+/* END Query result with pagination */
+
+
+/*
+for (var i = 0; i < tweetData.length; i++) 
+{
+    $("#tweetDetails").append("<tr><td>" + tweetData[i].user.screen_name + "</td>" +
+    "<td>" + tweetData[i].text + "</td>" +
+	"<td>" + tweetData[i].topic + "</td>" +
+	"<td>" + tweetData[i].city + "</td></tr>");
+}
+*/
+
+
+				
+// Donut dashboard chart 
+
+var tweetsDB = TAFFY(tweetData);
+var nycCount = tweetsDB().filter({'city':'nyc'}).count();
+var parisCount = tweetsDB().filter({'city':'paris'}).count();
+var delhiCount = tweetsDB().filter({'city':'delhi'}).count();
+var mexicoCount = tweetsDB().filter({'city':'mexico city'}).count();
+var bangkokCount = tweetsDB().filter({'city':'bangkok'}).count();
+
+var envCount = tweetsDB().filter({'topic':'environment'}).count();
+var crimeCount = tweetsDB().filter({'topic':'crime'}).count();
+var politicsCount = tweetsDB().filter({'topic':'politics'}).count();
+var unrestCount = tweetsDB().filter({'topic':'social unrest'}).count();
+var infraCount = tweetsDB().filter({'topic':'infra'}).count();
+
+
+
+var nycCount1="0";
+var mexicoCount1="0";
+var bangkokCount1="0";
+var delhiCount1="0";
+var parisCount1="0";
+
+for(var i=0;i<cityCrimeData.length;i++)
+{
+	if(cityCrimeData[i].crime_city=="nyc")
+		 nycCount1 = cityCrimeData[i].count;
+	else if(cityCrimeData[i].crime_city=='mexico city')
+		mexicoCount1 = cityCrimeData[i].count;
+	else if(cityCrimeData[i].crime_city=='bangkok')
+		bangkokCount1 = cityCrimeData[i].count;
+	else if(cityCrimeData[i].crime_city=='delhi')
+		delhiCount1 = cityCrimeData[i].count;
+	else if(cityCrimeData[i].crime_city=='paris')
+		parisCount1 = cityCrimeData[i].count;
+	else
+	{}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+ Morris.Donut({
+    element: 'morris-bar-citywise-crime',
+    data: [
+    	{label:"Paris", value: parisCount1},
+    	{label:"Mexico City", value: mexicoCount1},
+    	{label:"New York City", value: nycCount1},
+    	{label:"Delhi", value: delhiCount1},
+    	{label:"Bangkok", value: bangkokCount1}
+    	],
+    colors: ['#5533FF', '#FF5733', '#DAF7A6','#9D0C52','#655A8F'],
+    resize: true
+    }); 
+
+
+Morris.Bar({
+    element: 'morris-bar-topic',
+    data: [
+      {device: 'environment', geekbench: envCount},
+      {device: 'crime', geekbench: crimeCount},
+      {device: 'politics', geekbench: politicsCount},
+      {device: 'social unrest', geekbench: unrestCount},
+      {device: 'infra', geekbench: infraCount}
+    ],
+    xkey: 'device',
+    ykeys: ['geekbench'],
+    labels: ['Tweets'],
+    barRatio: 0.4,
+    xLabelAngle: 35,
+    hideHover: 'auto',
+	barColors: function (row, series, type) {
+	if(row.label == "environment") return "#AD1D28";
+	else if(row.label == "crime") return "#DEBB27";
+	else if(row.label == "politics") return "#fec04c";
+	else if(row.label == "social unrest") return "#1AB244";
+	else if(row.label == "infra") return "#34495E";
+}
+
+  });
+
+
+Morris.Donut({
+    element: 'dashboard-donut-SA',
+    data: [
+    	{label:"Negative", value: sentimentAnalysisData.negative},
+    	{label:"Positive", value: sentimentAnalysisData.postive},
+    	{label:"Neutral", value: sentimentAnalysisData.neutral}
+    	],
+    colors: ['#33414E', '#3FBAE4', '#FEA223'],
+    resize: true
+    });
+    
+Morris.Donut({
+    element: 'dashboard-donut-city',
+    data: [
+    	{label:"Paris", value: parisCount},
+    	{label:"Mexico City", value: mexicoCount},
+    	{label:"New York City", value: nycCount},
+    	{label:"Delhi", value: delhiCount},
+    	{label:"Bangkok", value: bangkokCount}
+    	
+    	],
+    colors: ['#5533FF', '#FF5733', '#DAF7A6','#9D0C52','#655A8F'],
+    resize: true
+    });
+// END Donut dashboard chart
+
+
+//City Donut chart
+/* Morris.Donut({
+    element: 'dashboard-donut-city',
+    data: [
+    	{label:"Paris", value: sentimentAnalysisData.negative},
+    	{label:"Mexico City", value: sentimentAnalysisData.postive},
+    	{label:"New York City", value: sentimentAnalysisData.neutral}
+    	{label:"Delhi", value: sentimentAnalysisData.neutral}
+    	{label:"Bangkok", value: sentimentAnalysisData.neutral}
+    	],
+    colors: ['#33414E', '#3FBAE4', '#FEA223','#33414E','#33414E'],
+    resize: true
+    }); */
+//end
+
+ // trending list
+
+for (var i = 0; i < 10; i++)
+{
+	if(facetList[i].count!=0 && facetList[i].hashtag!='')
+	$("#trendingHashtags").append('<a href="#" onclick="facetTable(this);" class="list-group-item" id="'+facetList[i].hashtag+'">'+facetList[i].hashtag+'<span class="badge badge-success">'+facetList[i].count+'</span></a>');
+}
+ 
+ 
+ // end trending list
+ 
+/* TAFFY DB */
+
+
+var languages = tweetsDB().distinct('lang');
+
+//alert(languages.length);
+/* END TAFFY DB  */
+/*
+for (var i = 0; i < languages.length; i++) 
+{
+    $("#langiageFilterList").append('<div class="col-md-12"><label class="check"><div class="icheckbox_minimal-grey" style="position: relative;">'+
+	'<input type="checkbox" class="icheckbox" style="position: absolute; opacity: 0;">'+
+	'<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>'+
+	languages[i]+'</label></div>');
+}
+*/
+
+
+// cities graph
+
+var cities = tweetsDB().distinct('city');
+
+var cityList = [                                           
+    {latLng: [48.856613, 2.352222], name: 'Paris'},
+    {latLng: [19.43, -99.13], name: 'Mexico City'},   
+    {latLng: [40.712776, -74.005974], name: 'NYC'},
+    {latLng: [28.704060, 77.102493], name: 'Delhi'},
+    {latLng: [13.75, 100.50], name: 'Bangkok'}];
+var cityData = [];
+
+
+for (var i = 0; i < cities.length; i++) 
+{
+	if(cities[i]=='nyc')
+	var nycCount = tweetsDB().filter({'city':'nyc'}).count();
+	else if(cities[i]=='mexico city')
+	var mexicoCount = tweetsDB().filter({'city':'mexico city'}).count();
+	else if(cities[i]=='bangkok')
+	var bangkokCount = tweetsDB().filter({'city':'bangkok'}).count();
+	else if(cities[i]=='delhi')
+	var delhiCount = tweetsDB().filter({'city':'delhi'}).count();
+	else if(cities[i]=='paris')
+	var parisCount = tweetsDB().filter({'city':'paris'}).count();
+	else
+	{}
+	
+	for(var j= 0;j<cityList.length;j++)
+	{
+		var city = cityList[j].name.toLowerCase();
+		if(city==cities[i])
+			cityData.push(cityList[j]);
+	}
+	
+}
+
+var jvm_wm = new jvm.WorldMap({container: $('#dashboard-map-sales'),
+    map: 'world_mill_en', 
+    backgroundColor: '#FFFFFF',                                      
+    regionsSelectable: true,
+    regionStyle: {selected: {fill: '#B64645'},
+                    initial: {fill: '#33414E'}},
+    markerStyle: {initial: {fill: '#3FBAE4',
+                   stroke: '#3FBAE4'}},
+    markers: cityData
+});
+
+
+Morris.Bar({
+    element: 'morris-bar-cities',
+    data: [
+      {device: 'Bangkok', geekbench: bangkokCount},
+      {device: 'Delhi', geekbench: delhiCount},
+      {device: 'Mexico City', geekbench: mexicoCount},
+      {device: 'New York City', geekbench: nycCount},
+      {device: 'Paris', geekbench: parisCount}
+    ],
+    xkey: 'device',
+    ykeys: ['geekbench'],
+    labels: ['Tweets'],
+    barRatio: 0.4,
+    xLabelAngle: 35,
+    hideHover: 'auto',
+	barColors: function (row, series, type) {
+	if(row.label == "Bangkok") return "#AD1D28";
+	else if(row.label == "Delhi") return "#DEBB27";
+	else if(row.label == "Mexico City") return "#fec04c";
+	else if(row.label == "New York City") return "#1AB244";
+	else if(row.label == "Paris") return "#34495E";
+}
+
+  });
+
+
+// end cities graph
+
+
+})
+
+//Filter data with respect to hashtags
+function facetTable(value)
+{
+	var hashTag = value.id;
+	$("#tweetDetails").html('');
+	$("#tweetDetailsPagination").html('');
+	facetedData = [];
+	for(var i = 0;i<tweetData.length;i++)
+	{
+		
+		if(tweetData[i].hasOwnProperty("hashtags"))
+		{
+			var tags = tweetData[i].hashtags;
+			if(typeof tags == "string")
+				var hashTagList = tags.split(",");
+			else
+				var hashTagList = tags;
+			for(var j = 0;j<hashTagList.length;j++)
+			{
+				if(hashTagList[j]==hashTag)
+				{
+					facetedData.push(tweetData[i]);
+				}
+			}
+		}
+	}
+	
+	var sourceData;
+	if(filteredData.length!=0)
+		sourceData = filteredData;
+	else
+		sourceData = facetedData;
+	
+	$('#tweetDetailsPagination').pagination({
+		dataSource: sourceData,
+		pageSize: 10,
+		className: 'custom-paginationjs',
+		callback: function(data, pagination) {
+			// template method of yourself
+			//var html = simpleTemplating(data);
+			//$('#tweetDetails').html(html);
+		$("#tweetDetails").html('');
+			for (var i = 0; i < data.length; i++) 
+			{
+				    $("#tweetDetails").append('<tr><td><a href="#" class="x-user"><img src="'+data[i]["user.profile_image_url_https"]+'" alt="profile picture" style="border-radius: 50%;"></a></td>' +
+				    '<td><span><b>' + data[i]["user.name"] + '</b> <a href="https://twitter.com/'+data[i]["user.screen_name"]+'">@'+data[i]["user.screen_name"] +'</a><br><a href="https://twitter.com/'+data[i]["user.screen_name"]+'/status/'+data[i].id_str+'" style="text-decoration:none;color:black">' +
+				    data[i].text + '</a><div class="form-group">' +
+					'<span style="padding:2%;color:#95B75D;"><i class="fa fa-retweet"> ' +
+					data[i].retweet_count+ '</i></span>'+
+					'<span style="padding:2%;color:#B64645"><i class="fa fa-heart"> ' +
+					data[i].favorite_count+ '</i></span>'+
+					'</div></td></tr>');
+			}
+		}
+		})
+
+	
+	
+}
+//END Filter data with respect to hashtags
+
+
+function languageFilter(checkBoxValue){
+
+	//alert(checkBoxValue.value);
+	$("#tweetDetails").html('');
+	$("#tweetDetailsPagination").html('');
+	var langList = document.getElementById('langiageFilterList');
+	var langs = langList.getElementsByTagName('input');
+	var count = 0;
+	
+	for (var j=0, len=langs.length; j<len; j++) {
+		if(langs[j].checked==true)
+		count++;
+	}
+	
+	var sourceData;
+	
+	if(facetedData.length!=0)
+		sourceData = facetedData;
+	else
+		sourceData = tweetData;
+		
+	if(count!=0)
+	{
+		filteredData = [];
+		$('#tweetDetailsPagination').pagination({
+		dataSource: sourceData,
+		pageSize: 10,
+		className: 'custom-paginationjs',
+		callback: function(data, pagination) {
+			// template method of yourself
+			//var html = simpleTemplating(data);
+			//$('#tweetDetails').html(html);
+		$("#tweetDetails").html('');
+			for (var i = 0; i < data.length; i++) 
+			{
+				for (var j=0, len=langs.length; j<len; j++) {
+				if(data[i].lang==langs[j].value && langs[j].checked==true )
+				{
+				    $("#tweetDetails").append('<tr><td><a href="#" class="x-user"><img src="'+data[i]["user.profile_image_url_https"]+'" alt="profile picture" style="border-radius: 50%;"></a></td>' +
+				    		'<td><span><b>' + data[i]["user.name"] + '</b> <a href="https://twitter.com/'+data[i]["user.screen_name"]+'">@'+data[i]["user.screen_name"] +'</a><br><a href="https://twitter.com/'+data[i]["user.screen_name"]+'/status/'+data[i].id_str+'" style="text-decoration:none;color:black">' +
+				    data[i].text + '</a><div class="form-group">' +
+					'<span style="padding:2%;color:#95B75D;"><i class="fa fa-retweet"> ' +
+					data[i].retweet_count+ '</i></span>'+
+					'<span style="padding:2%;color:#B64645"><i class="fa fa-heart"> ' +
+					data[i].favorite_count+ '</i></span>'+
+					'</div></td></tr>');
+				   filteredData.push(data[i]);
+				}
+				}
+			}
+		}
+		})
+	}
+	else{
+		filteredData= {};
+		$('#tweetDetailsPagination').pagination({
+		dataSource: sourceData,
+		pageSize: 10,
+		className: 'custom-paginationjs',
+		callback: function(data, pagination) {
+			// template method of yourself
+			//var html = simpleTemplating(data);
+			//$('#tweetDetails').html(html);
+		$("#tweetDetails").html('');
+		for (var i = 0; i < data.length; i++) 
+		{
+		    $("#tweetDetails").append('<tr><td><a href="#" class="x-user"><img src="'+data[i]["user.profile_image_url_https"]+'" alt="profile picture" style="border-radius: 50%;"></a></td>' +
+		    		'<td><span><b>' + data[i]["user.name"] + '</b> <a href="https://twitter.com/'+data[i]["user.screen_name"]+'">@'+data[i]["user.screen_name"] +'</a><br><a href="https://twitter.com/'+data[i]["user.screen_name"]+'/status/'+data[i].id_str+'" style="text-decoration:none;color:black">' +
+		    data[i].text + '</a><div class="form-group">' +
+			'<span style="padding:2%;color:#95B75D;"><i class="fa fa-retweet"> ' +
+			data[i].retweet_count+ '</i></span>'+
+			'<span style="padding:2%;color:#B64645"><i class="fa fa-heart"> ' +
+			data[i].favorite_count+ '</i></span>'+
+			'</div></td></tr>');
+		}
+		}
+		})
+	}
+	
+	/*
+	
+	
+	*/
+	
+	
+	
+	
+
+
+}
+</script>
+        <!-- END TEMPLATE -->
+    <!-- END SCRIPTS -->         
+    </body>
+</html>
+<!-- SCRIPTS --> 
+
+<!-- END SCRIPTS -->
